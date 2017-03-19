@@ -18,7 +18,7 @@ net localgroup Administrators /add quantacn.com\A0070575
 Reboot之前禁用本地连接
 
 ### Win7系统下U盘被拒绝访问怎么办?如何解决
-![image](https://github.com/auspbro/domain-admin-crack/image/image001.png)
+![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image001.png)
 
 win7系统下插入U盘可以显示信息，但是双击就会出现“位置不可用，无法访问，拒绝访问”，而在别的电脑上就可以访问。碰到这样的情况一般是你的电脑下载过了Win7旗舰版sp1安装包，在administrator帐户下安装的，卸载过360杀毒软件(有可能在这里禁用了可移动设备)。既然不是病毒的问题，那就是电脑某些设置的问题了，具体该如何解决呢?下面一起跟随小编来看解决方法。
 
