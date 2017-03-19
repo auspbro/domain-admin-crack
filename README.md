@@ -14,8 +14,7 @@
 net localgroup Administrators /add quantacn.com\A0070575  
 ``` 
 4. 进控制面板，用户，管理用户帐户，更改帐户 group 属性为 administrator, 将 quantacn.com 域中的用户 A0070575 加入本地的 Administrators 组。
-5. 在组策略中配置关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-关机,浏览选择此脚本文件.
-Reboot之前禁用本地连接
+5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
 
 ### Win7系统下U盘被拒绝访问怎么办?如何解决
 
