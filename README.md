@@ -13,11 +13,11 @@
 
 ### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
-### Use rufus tool to preparing a MS-DOS bootable device
+### 1. Use rufus tool to preparing a MS-DOS bootable device
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/rufus_usage.png)
 
-### How-to use Active@ Password Changer Password recovery softwate starting
+### 2. How-to use Active@ Password Changer Password recovery softwate starting
 * Boot from the floppy, USB drive or CD/DVD-ROM
 * Active@ Password Changer program starts automatically
 * If not run Active@ Password Changer by typing this command, along with [Enter]:
@@ -74,14 +74,12 @@ After you reset the user's password:
 * "Account is Disabled" flag (if any) gets cleared
 * "Password never expires" flag is set.
 
-开机选择从 U 盘启动，输入 PWD_CHNG.EXE 启动 tool 破解 Windows Administrator 账户密码，破解成功后以 Administrator 账户登入系统。
-
-3. 用net命令：（需要联公司内网下执行，命令中 "quantacn.com" 为域名，"A0070575" 为待破解的用户名）
+### 3. 用net命令：（需要联公司内网下执行，命令中 "quantacn.com" 为域名，"A0070575" 为待破解的用户名）
 ```
 net localgroup Administrators /add quantacn.com\A0070575  
 ``` 
-4. 进控制面板，用户，管理用户帐户，更改帐户 group 属性为 administrator, 将 quantacn.com 域中的用户 A0070575 加入本地的 Administrators 组。
-5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
+### 4. 进控制面板，用户，管理用户帐户，更改帐户 group 属性为 administrator, 将 quantacn.com 域中的用户 A0070575 加入本地的 Administrators 组。
+### 5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
 
 
 -------------------------------------------------------------------------------------------- 分割线 ---------------------------------------------------------------------------------------------------------
