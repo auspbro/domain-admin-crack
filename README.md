@@ -6,18 +6,19 @@
 域用户在本地计算机上默认的权限不是很高，很多时候操作起来很不方便。拥有本地管理员权限的话，可以赋予域用户本地管理员的权限，方法有几种，但是命令行的方式最为简洁方便。
 
 ### 准备工具：
-0. USB flash disk --> >=1GB
-1. [rufus](https://rufus.akeo.ie/?locale=zh_CN)
-2. [Active@ Password Changer](http://www.password-changer.com/download.htm)
-3. [WEPE](http://www.wepe.com.cn/download.html) -->可选
+0. USB flash disk ( >=1GB )
+1. [rufus](https://rufus.akeo.ie/?locale=zh_CN) (Create bootable device utility)
+2. [Active@ Password Changer](http://www.password-changer.com/download.htm) (MS-DOS tool for crack Windows password)
+3. [WEPE](http://www.wepe.com.cn/download.html) (WinPE toolkit)
 
 ### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
-#### Preparing a boot device
+### Preparing a boot device
 1. 使用 rufus 制作纯 Dos 启动 U 盘
+
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/rufus_usage.png)
 
-2. Active@ Password Changer 使用方法
+2. Active@ Password Changer 使用说明
 ### Password recovery softwate starting
 * Boot from the floppy, USB drive or CD/DVD-ROM
 * Active@ Password Changer program starts automatically
@@ -59,8 +60,10 @@ Users who don't have Administrator privileges are displayed in White; or, Grey i
 ### Password reset and changing account parameters
 After you select a specific user account you can see the account information:
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/PWDCHNG_DOS_05.PNG)
+
 To view and change permitted logon days and hours press the [PgDn] key:
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/PWDCHNG_DOS_06.PNG)
+
 To select and choose days and hours use arrow keys and the [Space] bar. Please note that hours are displayed in GMT (Greenwich Mean Time). You should take that into account for your local time zone.
 ```
 Default Windows system accounts do not have the option for "permitted logon hours".
