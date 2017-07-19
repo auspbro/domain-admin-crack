@@ -96,6 +96,7 @@ Windows 7 系统下插入 U 盘或可移动存储设备在资源管理器中可�
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image001.png)
 
 * Select Computer Configuration or User Configuration based on the criteria noted above, then expand Administrative Templates → System → Removable Storage Access.Double-click the policy setting for WPD, (Windows Portable Devices) that corresponds to the kind of restriction you want enforced (for example, double-click WPD Devices: Deny read access if you want to deny read access to your Apple iPhone). Select the corresponding radio button to Enable or Disable a policy setting.
+
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image002.png)
 
 这样U盘可以访问了，插入U盘后双击就不会显示“位置不可用，无法访问，拒绝访问”，这也是在Win7系统下的解决方法，碰到其他系统则有可能是别的原因，分享的这个方法也希望能帮助遇到此问题的朋友。
