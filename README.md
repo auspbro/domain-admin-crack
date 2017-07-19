@@ -13,7 +13,7 @@
 
 ### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
-### Use rufus tool to preparing a boot device
+### Use rufus tool to preparing a MS-DOS bootable device
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/rufus_usage.png)
 
