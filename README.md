@@ -5,11 +5,11 @@
 本项目可以用来破解企业对加域电脑的权限管理，及对USB端口禁用的设定。
 域用户在本地计算机上默认的权限不是很高，很多时候操作起来很不方便。拥有本地管理员权限的话，可以赋予域用户本地管理员的权限，方法有几种，但是命令行的方式最为简洁方便。
 
-### 准备工具：
-0. USB flash disk ( >=1GB )
-1. [rufus](https://rufus.akeo.ie/?locale=zh_CN) (Create bootable device utility)
-2. [Active@ Password Changer](http://www.password-changer.com/download.htm) (MS-DOS tool for crack Windows password)
-3. [WEPE](http://www.wepe.com.cn/download.html) (WinPE toolkit)
+### 准备工具 (2 & 3 任意选一个)：
+0. USB flash disk ( Size >= 1GB )
+1. [rufus](https://rufus.akeo.ie/?locale=zh_CN) ( Create bootable device utility )
+2. [Active@ Password Changer](http://www.password-changer.com/download.htm) ( MS-DOS tool for crack Windows password )
+3. [WEPE](http://www.wepe.com.cn/download.html) ( WinPE toolkit for crack Windows password )
 
 ### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
@@ -74,7 +74,7 @@ After you reset the user's password:
 * "Account is Disabled" flag (if any) gets cleared
 * "Password never expires" flag is set.
 
-### 3. 用net命令：（需要联公司内网下执行，命令中 "quantacn.com" 为域名，"A0070575" 为待破解的用户名）
+### 3. 在 Windows 命令提示符下使用 net 命令：（需连公司内网下执行，命令中 "quantacn.com" 为域名，"A0070575" 为待提升权限的用户名）
 ```
 net localgroup Administrators /add quantacn.com\A0070575  
 ``` 
