@@ -1,5 +1,5 @@
 
-## Windows入域电脑用户本地提权
+## Windows 入域电脑用户本地提权
 
 ### 目的:
 本项目可以用来破解企业对加域电脑的权限管理，及对USB端口禁用的设定。
@@ -78,11 +78,12 @@ After you reset the user's password:
 ```
 net localgroup Administrators /add quantacn.com\A0070575  
 ``` 
-#### 4. 进控制面板，用户，管理用户帐户，更改帐户 group 属性为 administrator, 将 quantacn.com 域中的用户 A0070575 加入本地的 Administrators 组。
+#### 4. Open Control Panel - User Accounts - Manage User Accounts，Change the user name(A0070575) which domain is QUANTACN'S group properties to  administrators group.
+
 #### 5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
 
 
--------------------------------------------------------------------------------------------- 分割线 ---------------------------------------------------------------------------------------------------------
+
 
 
 ## Windows 7 系统下 U 盘或其他可移动存储设备被拒绝访问解决方法
