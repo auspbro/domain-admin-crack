@@ -13,13 +13,11 @@
 
 ### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
-### Preparing a boot device
-1. 使用 rufus 制作纯 Dos 启动 U 盘
+### Use rufus tool to preparing a boot device
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/rufus_usage.png)
 
-2. Active@ Password Changer 使用说明
-### Password recovery softwate starting
+### How-to use Active@ Password Changer Password recovery softwate starting
 * Boot from the floppy, USB drive or CD/DVD-ROM
 * Active@ Password Changer program starts automatically
 * If not run Active@ Password Changer by typing this command, along with [Enter]:
@@ -86,7 +84,8 @@ net localgroup Administrators /add quantacn.com\A0070575
 5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
 
 
------------------------------------------------分割线---------------------------------------------------------
+-------------------------------------------------------------------------------------------- 分割线 ---------------------------------------------------------------------------------------------------------
+
 
 ## Windows 7 系统下 U 盘或其他可移动存储设备被拒绝访问解决方法
 
