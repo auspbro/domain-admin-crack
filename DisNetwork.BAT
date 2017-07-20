@@ -7,7 +7,7 @@ if exist c:\interface.bat del c:\interface.bat
 timeout 1
 
 netsh interface show interface >c:\NetworkProfile.log
-:: ¸ù¾İlogÖĞÓ¢ÎÄ×Ö·û´®ÅĞ¶ÏÏµÍ³ÓïÑÔ
+:: æ ¹æ®logä¸­è‹±æ–‡å­—ç¬¦ä¸²åˆ¤æ–­ç³»ç»Ÿè¯­è¨€
 find /i "Admin State" c:\NetworkProfile.log
 if not errorlevel 1 goto OS_EN
 goto OS_CN
@@ -27,9 +27,9 @@ for /f "skip=3 tokens=4,* delims= " %%i in (c:\NetworkProfile.log) do (
 call c:\interface.bat
 
 
-:: ÔÚ×é²ßÂÔÖĞÅäÖÃ¹Ø»ú½Å±¾£¬¿ªÊ¼-ÔËĞĞ-GPEDIT.MSC,¼ÆËã»úÅäÖÃ¡úWindowsÉèÖÃ-½Å±¾-¹Ø»ú,ä¯ÀÀÑ¡Ôñ´Ë½Å±¾ÎÄ¼ş.
-:: RebootÖ®Ç°½ûÓÃ±¾µØÁ¬½Ó
-:: ÖĞÓ¢ÎÄÏµÍ³logÖĞ±äÁ¿µÄ¿Õ¸ñÊı²»Ò»Ñù£¬ÖĞÎÄÁ½¸ö¿Õ¸ñ£¬Ó¢ÎÄÒ»¸ö¿Õ¸ñ
+:: åœ¨ç»„ç­–ç•¥ä¸­é…ç½®å…³æœºè„šæœ¬ï¼Œå¼€å§‹-è¿è¡Œ-GPEDIT.MSC,è®¡ç®—æœºé…ç½®â†’Windowsè®¾ç½®-è„šæœ¬-å…³æœº,æµè§ˆé€‰æ‹©æ­¤è„šæœ¬æ–‡ä»¶.
+:: Rebootä¹‹å‰ç¦ç”¨æœ¬åœ°è¿æ¥
+:: ä¸­è‹±æ–‡ç³»ç»Ÿlogä¸­å˜é‡çš„ç©ºæ ¼æ•°ä¸ä¸€æ ·ï¼Œä¸­æ–‡ä¸¤ä¸ªç©ºæ ¼ï¼Œè‹±æ–‡ä¸€ä¸ªç©ºæ ¼
 netsh interface set interface "%interface1:~0,-1%" disabled
 netsh interface set interface "%interface2:~0,-1%" disabled
 netsh interface set interface "%interface3:~0,-1%" disabled
@@ -53,9 +53,9 @@ for /f "skip=3 tokens=4,* delims= " %%i in (c:\NetworkProfile.log) do (
 call c:\interface.bat
 
 
-:: ÔÚ×é²ßÂÔÖĞÅäÖÃ¹Ø»ú½Å±¾£¬¿ªÊ¼-ÔËĞĞ-GPEDIT.MSC,¼ÆËã»úÅäÖÃ¡úWindowsÉèÖÃ-½Å±¾-¹Ø»ú,ä¯ÀÀÑ¡Ôñ´Ë½Å±¾ÎÄ¼ş.
-:: RebootÖ®Ç°½ûÓÃ±¾µØÁ¬½Ó
-:: ÖĞÓ¢ÎÄÏµÍ³logÖĞ±äÁ¿µÄ¿Õ¸ñÊı²»Ò»Ñù£¬ÖĞÎÄÁ½¸ö¿Õ¸ñ£¬Ó¢ÎÄÒ»¸ö¿Õ¸ñ
+:: åœ¨ç»„ç­–ç•¥ä¸­é…ç½®å…³æœºè„šæœ¬ï¼Œå¼€å§‹-è¿è¡Œ-GPEDIT.MSC,è®¡ç®—æœºé…ç½®â†’Windowsè®¾ç½®-è„šæœ¬-å…³æœº,æµè§ˆé€‰æ‹©æ­¤è„šæœ¬æ–‡ä»¶.
+:: Rebootä¹‹å‰ç¦ç”¨æœ¬åœ°è¿æ¥
+:: ä¸­è‹±æ–‡ç³»ç»Ÿlogä¸­å˜é‡çš„ç©ºæ ¼æ•°ä¸ä¸€æ ·ï¼Œä¸­æ–‡ä¸¤ä¸ªç©ºæ ¼ï¼Œè‹±æ–‡ä¸€ä¸ªç©ºæ ¼
 netsh interface set interface "%interface1:~0,-2%" disabled
 netsh interface set interface "%interface2:~0,-2%" disabled
 netsh interface set interface "%interface3:~0,-2%" disabled
