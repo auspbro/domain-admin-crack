@@ -11,7 +11,7 @@
 2. [Active@ Password Changer](http://www.password-changer.com/download.htm) ( MS-DOS tool for crack Windows password )
 3. [WEPE](http://www.wepe.com.cn/download.html) ( WinPE toolkit for crack Windows password )
 
-### 方法:（该方法，不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
+### 方法:（该方法不需要域管理员的权限，只需本地管理员的权限就可以了。图形化界面，必须要有与管理员权限才容易操作）
 
 #### 1. Use rufus tool to preparing a MS-DOS bootable device
 
