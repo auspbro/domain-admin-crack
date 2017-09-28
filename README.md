@@ -80,10 +80,7 @@ net localgroup Administrators /add quantacn.com\A0070575
 ``` 
 #### 4. Open Control Panel - User Accounts - Manage User Accounts，Change the user name(A0070575) which domain is QUANTACN'S group properties to  administrators group.
 
-#### 5. 在组策略中配置开机和关机脚本，开始-运行-GPEDIT.MSC,计算机配置→Windows设置-脚本-开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
-
-
-
+#### 5. 在组策略中配置开机和关机脚本，开始 - 运行 - GPEDIT.MSC,计算机配置 - Windows设置 - 脚本 - 开机／关机,浏览分别选择 EnNetwork.BAT 和 DisNetwork.BAT 脚本文件.
 
 
 ## Windows 7 系统下 U 盘或其他可移动存储设备被拒绝访问解决方法
@@ -91,7 +88,7 @@ net localgroup Administrators /add quantacn.com\A0070575
 Windows 7 系统下插入 U 盘或可移动存储设备在资源管理器中可以显示相关存储设备的卷标信息，但是双击该设备卷标却提示“位置不可用，无法访问，拒绝访问”，而在别的电脑上就可以访问。碰到这样的情况一般如果实在企业可能是公司域管理员限制了 USB 端口。如果是自己的电脑可能是因为下载过了 Win7 旗舰版 sp1 安装包，在 administrator 帐户下安装的，卸载过 360 杀毒软件(有可能在这里禁用了可移动设备)。既然不是病毒的问题，那就是电脑某些设置的问题了，具体该如何解决呢?
 
 ### 解决方法：
-* 在运行窗口中输入 gpedit.msc 回车，打开计算机配置-管理模版-系统-可移动存储访问，在所有可移动存储类：拒绝所有权限，里面显示的是未配置，按说是没有阻止访问的(也可能是显示的和注册表不一致呢)。点“已禁用”->应用，再点“未配置”->应用。重启计算机。
+* 在运行窗口中输入 gpedit.msc 回车，打开计算机配置 - 管理模版 - 系统 - 可移动存储访问，在所有可移动存储类：拒绝所有权限，里面显示的是未配置，按说是没有阻止访问的(也可能是显示的和注册表不一致呢)。点“已禁用” -> 应用，再点“未配置” -> 应用。重启计算机。
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image001.png)
 
