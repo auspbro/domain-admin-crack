@@ -85,18 +85,14 @@ net localgroup Administrators /add quantacn.com\A0070575
 
 ## Windows 7 系统下 U 盘或其他可移动存储设备被拒绝访问解决方法
 
-<<<<<<< HEAD
 Windows 7 系统下插入 U 盘或可移动存储设备在资源管理器中可以显示相关存储设备的卷标信息，但是双击该设备卷标却提示“位置不可用，无法访问，拒绝访问”，而在别的电脑上就可以访问。碰到这样的情况一般如果是在企业可能是公司域管理员限制了 USB 端口。
-=======
-Windows 7 系统下插入 U 盘或可移动存储设备在资源管理器中可以显示相关存储设备的卷标信息，但是双击该设备卷标却提示“位置不可用，无法访问，拒绝访问”，而在别的电脑上就可以访问。碰到这样的情况一般如果实在企业可能是公司域管理员限制了 USB 端口。
->>>>>>> e4578b5a4dd7a57a186ffe8074c11cbe05e2b63d
 
 ### 解决方法：
 * 在运行窗口中输入 gpedit.msc 回车，打开计算机配置 - 管理模版 - 系统 - 可移动存储访问，在所有可移动存储类：拒绝所有权限，里面显示的是未配置，按说是没有阻止访问的(也可能是显示的和注册表不一致呢)。点“已禁用” -> 应用，再点“未配置” -> 应用。重启计算机。
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image001.png)
 
-* Select Computer Configuration or User Configuration based on the criteria noted above, then expand Administrative Templates → System → Removable Storage Access.Double-click the policy setting for WPD, (Windows Portable Devices) that corresponds to the kind of restriction you want enforced (for example, double-click WPD Devices: Deny read access if you want to deny read access to your Apple iPhone). Select the corresponding radio button to Enable or Disable a policy setting.
+* Select Computer Configuration or User Configuration based on t·he criteria noted above, then expand Administrative Templates → System → Removable Storage Access.Double-click the policy setting for WPD, (Windows Portable Devices) that corresponds to the kind of restriction you want enforced (for example, double-click WPD Devices: Deny read access if you want to deny read access to your Apple iPhone). Select the corresponding radio button to Enable or Disable a policy setting.
 
 ![image](https://github.com/auspbro/domain-admin-crack/blob/master/image/image002.png)
 
